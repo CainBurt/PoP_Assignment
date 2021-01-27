@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>HTML Content Tests</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navMain">
+            <a href="index.html">Home</a> |
+            <a href="wwwintro.html">WWW Intro</a> |
+            <a href="htmlstructure.html">HTML Structure</a> |
+            <a href="htmlcontent.html">HTML Content</a> |
+            <a href="dataimport.html">Data Import Formats</a> |
+            <a href="csspart1.html">CSS Part 1</a> |
+            <a href="csspart2.html">CSS Part 2</a> |
+            <a href="design.html">Design Issues</a>
+        </nav>
+
+    </header>
+    <div id="divContent">
+        <section id="sectionMain">
+            <h1>HTML Structure</h1>
+
+            <section id="practicearea">
+                <h2>Practice Area</h2>
+         
+            </section>
+            
+            <section id="studentcode">
+                <h2>Student Code</h2>
+
+                    <section id="textSection">
+                        <h3>"Text Content"</h3>
+
+                            <p id="paraText1">
+                                <b>hello</b> 
+                                <del>goodbye</del>
+                                </p>
+                            <p id ="paraText2"> 
+                                <i>Hello</i>
+                                this text has a <sub>subscript</sub> :)
+                                 </p>
+                    </section>
+
+                <section id="listSection">
+                    <ol type="I" id="ol1">
+                        <li>one</li>
+                        <li>two</li>
+                        <li>three</li>
+                    </ol>
+                </section>
+
+                <section id="linkSection">
+                    <a href="https://www.bournemouth.ac.uk" id="link1"></a>
+                    <a href="#textSection" id="link2"></a>
+                </section>
+
+                <section id="imageSection">
+                    <img id="image1" src="images/sunset1.jpg" arc="image of a sunset" height="100%" width="50%">
+                </section>
+
+                <section id="tableSection">
+                    <table id="table1">
+                        <tr>
+                            <td>Firstname</td>
+                            <td>Lastname</td> 
+                            <td>Age</td>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                    </table>
+                </section>
+
+                <section id="formSection">
+                    <form id="form1" method="GET" action="#">
+                        <input type="text" name="textInput" value="Hello World!">
+                        <select name="cards">
+                            <option value="hearts">hearts</option>
+                            <option value="diamonds">diamonds</option>
+                            <option value="spades">spades</option>
+                            <option value="clubs">clubs</option>
+                        <input type="submit" value="submit">
+                        </select>
+                    </form>
+                </section>
+
+                <section id="mediaSection">
+                    <video controls id="video1">
+                        <source src="videos/video1.mp4">
+                        <source src="videos/video1.ogg">
+                    </video>
+                </section>
+                
+            </section>
+        </section>
+        <aside id="asideMain">
+            <div id="divAsideHeight">
+                <h2>Tips/Links</h2>
+                <quote class="tip">Don't forget to backup you work on a regular basis.</quote>
+                <quote class="tip">Don't forget to use the Browser Developer Tools to help debug your code.</quote>
+                <quote class="tip">Don't forget to make sure your code is <a href="https://validator.w3.org/" target="_blank">validated</a></quote>
+                <p><a href="https://www.w3schools.com/html/html5_syntax.asp" target="blank">W3Schools Coding Conventions</a></p>
+                <p><a href="https://loremipsum.io/generator/?n=2&t=p" target="_blank">Lorem ipsum Generator</a></p>
+                <p><a href="https://validator.w3.org/#validate_by_input" target="_blank">W3C Validator</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="footerMain">
+        <nav id="navFooter">
+            <a href="index.html">Home</a> |
+            <a href="wwwintro.html">WWW Intro</a> |
+            <a href="htmlstructure.html">HTML Structure</a> |
+            <a href="htmlcontent.html">HTML Content</a> |
+            <a href="dataimport.html">Data Import Formats</a> |
+            <a href="csspart1.html">CSS Part 1</a> |
+            <a href="csspart2.html">CSS Part 2</a> |
+            <a href="design.html">Design Issues</a>
+        </nav>
+    </footer>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+    <script src="scripts/testsContent.js"></script>
+</body>
+
+</html>

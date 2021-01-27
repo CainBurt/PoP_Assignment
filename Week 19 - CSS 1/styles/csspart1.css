@@ -1,0 +1,101 @@
+b, strong {
+    color: #0000ff;
+    background-color: yellow;
+}
+
+#cssID{
+    color: rgb(127,127,127);
+    border: 3px #0000ff;
+    border-style: dashed;
+}
+
+.cssArea1Class1{
+    text-align: center;
+}
+
+p.cssArea1Class2{
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+#divSibling ~ p{
+    font-family: monospace;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #ff0000;
+    color: #ffff00;
+    font-family: serif;
+}
+
+#firstLine::first-line{
+    font-variant: small-caps;
+}
+
+#cssAttribute[attribute = blank]{
+    font-size: 1.5em;
+
+}
+/* colours */
+#namedColor{
+    color: tomato;
+}
+#hexColor{
+    color: #ff00ff
+}
+#rgbColor{
+    color: rgb(33,189,6);
+}
+#rgbaColor{
+    color: rgba(33,189,6,0.3);
+}
+#hslColor{
+    color: hsl(266,100%,50%);
+}
+#hslaColor{
+    color: hsla(266,100%,50%,0.3);
+}
+
+/* styles */
+ol{
+    font-family: Verdana;
+    background-color: #669977;
+    padding: 20px;
+}
+ol li{
+    background-color: #a9e0a9;
+    padding: 5px;
+    margin-left: 35px;
+}
+li + .highlighted{
+    color: white;
+    background-color: black;
+}
+
+/* table */
+#bands{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+}
+#bands td{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 8px;
+    color: #669977
+}
+#bands th{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #669977;
+    color:white;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
